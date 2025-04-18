@@ -1,0 +1,22 @@
+/* global.css */
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+/* 整个应用的容器 */
+.app-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+/* PC 端或大屏设备的样式：设置最大宽度并居中 */
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 480px; /* 根据手机设计尺寸设定最大宽度 */
+    margin: 0 auto;
+    /* 可选：加上边框或阴影，突出手机界面效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
